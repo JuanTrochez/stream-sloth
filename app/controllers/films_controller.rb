@@ -15,6 +15,7 @@ class FilmsController < ApplicationController
   # GET /films/new
   def new
     @film = Film.new
+    @film.build_genre
   end
 
   # GET /films/1/edit
@@ -69,6 +70,6 @@ class FilmsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def film_params
-      params.require(:film).permit(:titre, :realisateur, :date_sortie, :date_production, :synopsis, :pays, :genres, :duree, :image)
+      params.require(:film).permit(:titre, :realisateur, :date_sortie, :date_production, :synopsis, :pays, :genre_id, :duree, :image)
     end
 end

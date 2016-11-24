@@ -21,6 +21,11 @@
 </p>
 
 <p>
+  <strong>Genre:</strong>
+  <%= Genre.find(@film.genre_id).nom %>
+</p>
+
+<p>
   <strong>Synopsis:</strong>
   <%= @film.synopsis %>
 </p>
@@ -30,10 +35,6 @@
   <%= @film.pays %>
 </p>
 
-<p>
-  <strong>Genres:</strong>
-  <%= @film.genres %>
-</p>
 
 <p>
   <strong>Duree:</strong>

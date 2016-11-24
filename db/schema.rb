@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20161124140723) do
     t.date     "date_production"
     t.text     "synopsis",        limit: 65535
     t.string   "pays"
-    t.string   "genres"
+    t.integer  "genre_id"
     t.string   "duree"
     t.string   "image"
     t.datetime "created_at",                    null: false

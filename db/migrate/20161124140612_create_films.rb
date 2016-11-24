@@ -7,7 +7,7 @@ class CreateFilms < ActiveRecord::Migration[5.0]
       t.date :date_production
       t.text :synopsis
       t.string :pays
-      t.string :genres
+      t.integer :genre_id
       t.string :duree
       t.string :image
 

@@ -31,6 +31,8 @@
     <%= f.date_select :date_production %>
   </div>
 
+    <%= f.collection_select :genre_id, Genre.all, :id, :nom %>
+
   <div class="field">
     <%= f.label :synopsis %>
     <%= f.text_area :synopsis %>
@@ -41,10 +43,6 @@
     <%= f.text_field :pays %>
   </div>
 
-  <div class="field">
-    <%= f.label :genres %>
-    <%= f.text_field :genres %>
-  </div>
 
   <div class="field">
     <%= f.label :duree %>
