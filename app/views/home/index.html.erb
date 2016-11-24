@@ -1,2 +1,7 @@
 <h1>Home#index</h1>
+
 <p>Test variable <%= @variable %></p>
+<% @films.each do |film| %>
+    <%= film.titre %><br/>
+    <%= film.realisateur %><br/>
+<% end %>
