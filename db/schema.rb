@@ -10,27 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161124131552) do
+ActiveRecord::Schema.define(version: 20161124140723) do
 
   create_table "films", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "titre"
-    t.string "realisateur"
-    t.date   "date_sortie"
-    t.string "date_production"
-    t.text   "synopsis",        limit: 65535
-    t.string "pays"
-    t.string "genres"
-    t.string "duree"
-    t.string "image"
+    t.string   "titre"
+    t.string   "realisateur"
+    t.date     "date_sortie"
+    t.date     "date_production"
+    t.text     "synopsis",        limit: 65535
+    t.string   "pays"
+    t.string   "genres"
+    t.string   "duree"
+    t.string   "image"
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
   end
 
   create_table "genres", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string "nom"
+    t.string   "nom"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "videos", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string  "lien"
-    t.integer "film_id"
+    t.string   "lien"
+    t.integer  "film_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

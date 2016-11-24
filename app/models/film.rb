@@ -1,2 +1,2 @@
-class Film < ActiveRecord::Base
+class Film < ApplicationRecord
 end
