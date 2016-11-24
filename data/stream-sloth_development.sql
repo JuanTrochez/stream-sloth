@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Jeu 24 Novembre 2016 à 13:40
+-- Généré le :  Jeu 24 Novembre 2016 à 14:24
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -38,7 +38,7 @@ CREATE TABLE `ar_internal_metadata` (
 --
 
 INSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES
-('environment', 'development', '2016-11-24 13:04:35', '2016-11-24 13:04:35');
+('environment', 'development', '2016-11-24 14:08:20', '2016-11-24 14:08:20');
 
 -- --------------------------------------------------------
 
@@ -51,20 +51,15 @@ CREATE TABLE `films` (
   `titre` varchar(255) DEFAULT NULL,
   `realisateur` varchar(255) DEFAULT NULL,
   `date_sortie` date DEFAULT NULL,
-  `date_production` varchar(255) DEFAULT NULL,
+  `date_production` date DEFAULT NULL,
   `synopsis` text,
   `pays` varchar(255) DEFAULT NULL,
   `genres` varchar(255) DEFAULT NULL,
   `duree` varchar(255) DEFAULT NULL,
-  `image` varchar(255) DEFAULT NULL
+  `image` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Contenu de la table `films`
---
-
-INSERT INTO `films` (`id`, `titre`, `realisateur`, `date_sortie`, `date_production`, `synopsis`, `pays`, `genres`, `duree`, `image`) VALUES
-(1, 'Don\'t Breathe', 'Fede Alvarez', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -74,7 +69,9 @@ INSERT INTO `films` (`id`, `titre`, `realisateur`, `date_sortie`, `date_producti
 
 CREATE TABLE `genres` (
   `id` int(11) NOT NULL,
-  `nom` varchar(255) DEFAULT NULL
+  `nom` varchar(255) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -92,12 +89,9 @@ CREATE TABLE `schema_migrations` (
 --
 
 INSERT INTO `schema_migrations` (`version`) VALUES
-('20161124125220'),
-('20161124125854'),
-('20161124125945'),
-('20161124131319'),
-('20161124131522'),
-('20161124131552');
+('20161124140612'),
+('20161124140653'),
+('20161124140723');
 
 -- --------------------------------------------------------
 
@@ -108,7 +102,9 @@ INSERT INTO `schema_migrations` (`version`) VALUES
 CREATE TABLE `videos` (
   `id` int(11) NOT NULL,
   `lien` varchar(255) DEFAULT NULL,
-  `film_id` int(11) DEFAULT NULL
+  `film_id` int(11) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -153,7 +149,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT pour la table `films`
 --
 ALTER TABLE `films`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `genres`
 --

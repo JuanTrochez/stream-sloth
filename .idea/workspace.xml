@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="781cf924-4086-4bd0-94a0-9e9114d07a34" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/film.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/genre.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/video.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/film.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/genre.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/video.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/film_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/genre_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/video_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/film.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/genre.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/video.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/film/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/genre/index.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161124131319_films.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161124131522_genres.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20161124131552_videos.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/stream-sloth.iml" afterPath="$PROJECT_DIR$/.idea/stream-sloth.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="781cf924-4086-4bd0-94a0-9e9114d07a34" name="Default" comment="" />
     <ignored path="stream-sloth.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -649,12 +619,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1479977231786</updated>
-      <workItem from="1479977233236" duration="12122000" />
+      <workItem from="1479977233236" duration="12274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12122000" />
+    <option name="totallyTimeSpent" value="12274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
