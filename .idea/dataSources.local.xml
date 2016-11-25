@@ -3,25 +3,12 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails stream-sloth: production" uuid="606a321b-b946-4bfb-a76c-6ee46fff4972">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
-      <user-name>root</user-name>
-      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dffedff8dfefdfebdfe7df87dff9dfe6dfe5dffedfe2dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
     </data-source>
     <data-source name="Rails stream-sloth: development" uuid="4759784e-0bde-45ee-aa4a-55dd09dbe13b">
-      <database-info product="MySQL" version="5.7.11" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
-        <extra-name-characters>#@</extra-name-characters>
-        <identifier-quote-string>`</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
-      <user-name>root</user-name>
-      <user-password>dfd8dfc5dfc5dfde</user-password>
-      <resolve-scope>stream-sloth_development:</resolve-scope>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
     </data-source>
     <data-source name="Rails stream-sloth: test" uuid="e055f239-14ee-427f-bb4d-8f3370efc0da">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <first-sync>true</first-sync>
-      <user-name>root</user-name>
-      <user-password>dfd8dfc5dfc5dfde</user-password>
     </data-source>
   </component>
 </project>
