@@ -11,8 +11,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
+        <li><%= link_to 'Ajouter un film', new_film_path %></li>
+        <li><%= link_to 'Ajouter une video', new_video_path %></li>
+        <li><%= link_to 'Ajouter un genre', new_genre_path %></li>
       </ul>
-      <form class="navbar-form navbar-right" action="search">
+      <form class="navbar-form navbar-right" action="/search">
         <div class="form-group input-group">
           <select name="genre" id="genre-search" class="btn btn-default">
             <% Genre.all.each do |genre| %>

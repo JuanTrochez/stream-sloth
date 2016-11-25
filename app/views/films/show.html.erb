@@ -7,7 +7,7 @@
         <%= link_to 'Back', films_path , class:'btn btn-default'%>
       </div>
     </div>
-    <div class="info-container text-left">
+    <div class="info-container text-center">
       <p class="titreFilmDescription">
         <strong><%= @film.titre %></strong>
 
@@ -43,7 +43,7 @@
       </p>
       </div>
 
-      <p>
+      <p class="text-left">
         <strong>Synopsis:</strong>
         <%= @film.synopsis %>
       </p>

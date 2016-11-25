@@ -41,12 +41,10 @@ footer {
 /*BOUTONS*/
 a.btn  {
   color: white;
-  &.default {
+  &.btn-default {
     color: black;
   }
 }
-
-
 
 .container-fluid {
   .col-sm-8 {
@@ -54,48 +52,89 @@ a.btn  {
     margin: 0px auto;
     display: block;
     float: initial;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
   }
 }
 
 .image-container{
   display: inline-block;
   width: 25%;
-  margin-right: 4%;
+  margin-right: 5%;
   float:left;
+  text-align: center;
   img{
     width:100%;
+    max-width: 250px;
     margin-bottom: 5%;
   }
 }
 
 .info-container{
   display: inline-block;
-  width: 70%;
+  width: 55%;
 }
 
 .bandeAnnonce{
   font-size: 0;
   text-align: center;
   iframe {
-    width: 60%;
-    height: 250px;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
   }
 }
 
 .titreFilmDescription{
-  text-align: center;
+  text-align: left;
   font-size: large;
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .rightSideFilmDescription{
   display: inline-block;
-  width:30%;
+  width:49%;
   text-align : left;
   vertical-align: top;
 }
 
 .leftSideFilmDescription{
   display: inline-block;
-  width:30%;
+  text-align : left;
+  width:49%;
   vertical-align: top;
+}
+
+@media all and (max-width: 770px) {
+  .leftSideFilmDescription, .rightSideFilmDescription{
+    width: 100%;
+    width: 100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .leftSideFilmDescription, .rightSideFilmDescription{
+    width: 100%;
+    width: 100%;
+  }
+  .image-container, .info-container {
+    width: 100%;
+  }
+}
+
+
+
+/*Forms*/
+form {
+  display: block;
+  text-align: left;
+  max-width: 500px;
+  padding:10px;
+  margin: 0 auto;
+  label {
+    display: block;
+  }
 }

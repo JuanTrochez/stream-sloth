@@ -16,10 +16,12 @@
     <%= f.text_field :lien %>
   </div>
 
-
-    <%= f.collection_select :film_id, Film.all, :id, :titre %>
+    <div class="field">
+      <label for="film_id">Film</label>
+    <%= f.collection_select :film_id, Film.all, :id, :titre, {}, {:class=>'btn btn-default'} %>
+    </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Create', :class => 'btn btn-default' %>
   </div>
 <% end %>

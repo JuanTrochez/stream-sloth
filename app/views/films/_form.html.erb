@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :titre %>
-    <%= f.text_field :titre %>
+    <%= f.text_field :titre, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= f.label :realisateur %>
-    <%= f.text_field :realisateur %>
+    <%= f.text_field :realisateur, class: 'form-control' %>
   </div>
 
   <div class="field">
@@ -31,31 +31,35 @@
     <%= f.date_select :date_production %>
   </div>
 
-    <%= f.collection_select :genre_id, Genre.all, :id, :nom %>
+
+    <div class="field">
+      <label for="genre_id">Genre</label>
+      <%= f.collection_select :genre_id, Genre.all, :id, :nom, {}, {:class=>'btn btn-default'} %>
+    </div>
 
   <div class="field">
     <%= f.label :synopsis %>
-    <%= f.text_area :synopsis %>
+    <%= f.text_area :synopsis, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= f.label :pays %>
-    <%= f.text_field :pays %>
+    <%= f.text_field :pays, class: 'form-control' %>
   </div>
 
 
   <div class="field">
     <%= f.label :duree %>
-    <%= f.text_field :duree %>
+    <%= f.text_field :duree, class: 'form-control' %>
   </div>
 
 
     <div class="field">
       <%= f.label :image %>
-      <%= f.file_field :image %>
+      <%= f.file_field :imagev, class: 'form-control' %>
     </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Create', :class => 'btn btn-default' %>
   </div>
 <% end %>

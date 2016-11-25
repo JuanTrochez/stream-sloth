@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'search', to: 'search#index'
+  resources :search
   resources :videos
   resources :genres
   resources :films
