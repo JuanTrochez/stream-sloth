@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Ven 25 Novembre 2016 à 13:25
+-- Généré le :  Ven 25 Novembre 2016 à 16:04
 -- Version du serveur :  5.7.11
 -- Version de PHP :  5.6.18
 
@@ -71,11 +71,11 @@ CREATE TABLE `films` (
 
 INSERT INTO `films` (`id`, `titre`, `realisateur`, `date_sortie`, `date_production`, `synopsis`, `pays`, `genre_id`, `duree`, `image`, `created_at`, `updated_at`, `image_file_name`, `image_content_type`, `image_file_size`, `image_updated_at`) VALUES
 (1, 'fdsjl', 'jkl', '2016-02-24', '2016-11-24', 'jfl', 'kfjkl', 2, 'fjkl', 'clock_91890.jpg', '2016-11-24 18:50:15', '2016-11-25 10:51:52', NULL, NULL, NULL, NULL),
-(2, 'fjd', 'mfjkdlm', '2016-11-24', '2016-11-24', 'jfkdl', 'fjkl', 1, 'fjklm', 'fed', '2016-11-24 22:07:20', '2016-11-24 22:07:20', NULL, NULL, NULL, NULL),
+(2, 'Hello world', 'Kim', '2016-11-24', '2016-11-24', 'Hello the world', 'US', 3, '2h', 'alien-head_318-85913.png', '2016-11-24 22:07:20', '2016-11-25 15:59:44', NULL, NULL, NULL, NULL),
 (3, 'jlkjfdsl', 'jkflmd', '2016-11-24', '2016-11-24', 'fjkld', 'fjkl', 1, 'fjklf', 'jklmfd', '2016-11-24 22:12:41', '2016-11-24 22:12:41', NULL, NULL, NULL, NULL),
-(4, 'fdjskl', 'fjklm', '2016-02-24', '2016-11-24', 'fjkdl', 'fjkl', 2, 'fjkl', 'fjkl', '2016-11-24 22:28:07', '2016-11-24 22:28:20', NULL, NULL, NULL, NULL),
 (5, 'Test', 'JKFDLMS', '2016-11-24', '2016-11-24', 'jkflmd', 'fjklm', 2, 'fjklm', 'fjklm', '2016-11-24 22:36:56', '2016-11-24 22:36:56', NULL, NULL, NULL, NULL),
-(6, 'fdj', 'hf', '2016-11-25', '2016-11-25', 'fjdklm', 'fjlk', 1, 'fjdlk', 'alien-head_318-85913.png', '2016-11-25 10:31:48', '2016-11-25 10:31:48', NULL, NULL, NULL, NULL);
+(6, 'fdj', 'hf', '2016-11-25', '2016-11-25', 'fjdklm', 'fjlk', 1, 'fjdlk', 'alien-head_318-85913.png', '2016-11-25 10:31:48', '2016-11-25 10:31:48', NULL, NULL, NULL, NULL),
+(7, 'Test 3', 'hello', '2016-11-25', '2016-11-25', 'this is a test', 'France', 1, '1h45', NULL, '2016-11-25 15:57:38', '2016-11-25 15:57:38', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,8 @@ CREATE TABLE `genres` (
 
 INSERT INTO `genres` (`id`, `nom`, `created_at`, `updated_at`) VALUES
 (1, 'Action', '2016-11-24 18:22:37', '2016-11-24 18:22:37'),
-(2, 'Science - Fiction', '2016-11-24 18:22:51', '2016-11-24 18:22:51');
+(2, 'Science - Fiction', '2016-11-24 18:22:51', '2016-11-24 18:22:51'),
+(3, 'Horreur', '2016-11-25 15:37:56', '2016-11-25 15:37:56');
 
 -- --------------------------------------------------------
 
@@ -137,7 +138,8 @@ CREATE TABLE `videos` (
 --
 
 INSERT INTO `videos` (`id`, `lien`, `film_id`, `created_at`, `updated_at`) VALUES
-(1, 'https://www.youtube.com/embed/JwQZQygg3Lk', 1, '2016-11-25 10:41:47', '2016-11-25 10:41:47');
+(1, 'https://www.youtube.com/embed/JwQZQygg3Lk', 1, '2016-11-25 10:41:47', '2016-11-25 10:41:47'),
+(2, 'https://www.youtube.com/embed/QK8mJJJvaes', 2, '2016-11-25 16:01:39', '2016-11-25 16:01:39');
 
 --
 -- Index pour les tables exportées
@@ -181,17 +183,17 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT pour la table `films`
 --
 ALTER TABLE `films`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `genres`
 --
 ALTER TABLE `genres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT pour la table `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
