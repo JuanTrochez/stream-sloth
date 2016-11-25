@@ -1,5 +1,33 @@
-<h1>Search#index</h1>
-<p><%= @genre %></p>
-<% @films.each do |film| %>
-    <%= film.titre %>
-<% end %>
+<div class="films">
+  <p id="notice"><%= notice %></p>
+
+  <h1 class="page-title">Films pour le genre "<%= @genre %>"</h1>
+
+  <div class="container-films list-films">
+    <% @films.each do |film| %>
+        <div class="film item">
+
+          <div class="image">
+            <%= image_tag film.image %>
+          </div>
+
+          <div class="infos">
+            <div class="titre"><%= link_to film.titre, film %><%=  %></div>
+            <span class="genre"><%= Genre.find(film.genre_id).nom %></span>
+            <span class="date"><%= film.date_sortie.strftime("%Y") %></span>
+          </div>
+
+          <div class="actions text-right">
+            <%= link_to 'Edit', edit_film_path(film), class:'btn btn-primary' %>
+            <%= link_to 'Destroy', film, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+    <% end %>
+  </div>
+
+  <br>
+
+  <%= link_to 'New Film', new_film_path %>
+
+</div>
+

@@ -14,7 +14,7 @@
       </ul>
       <form class="navbar-form navbar-right" action="search">
         <div class="form-group input-group">
-          <select name="genre" id="genre-search">
+          <select name="genre" id="genre-search" class="btn btn-default">
             <% Genre.all.each do |genre| %>
             <option value="<%= genre.id %>"><%= genre.nom %></option>
             <% end %>

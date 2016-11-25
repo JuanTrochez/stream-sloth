@@ -3,7 +3,7 @@
 
 <h1 class="page-title">Films</h1>
 
-  <div class="container list-films">
+  <div class="container-films list-films">
     <% @films.each do |film| %>
         <div class="film item">
 
@@ -13,11 +13,11 @@
 
           <div class="infos">
             <div class="titre"><%= link_to film.titre, film %><%=  %></div>
-            <div class="genre"><%= Genre.find(film.genre_id).nom %></div>
-            <div class="date"><td><%= film.date_sortie %></td></div>
+            <span class="genre"><%= Genre.find(film.genre_id).nom %></span>
+            <span class="date"><%= film.date_sortie.strftime("%Y") %></span>
           </div>
 
-          <div class="actions">
+          <div class="actions text-right">
             <%= link_to 'Edit', edit_film_path(film), class:'btn btn-primary' %>
             <%= link_to 'Destroy', film, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>

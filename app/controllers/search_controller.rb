@@ -5,7 +5,7 @@ class SearchController < ApplicationController
       @films = Film.where(genre_id: params[:genre])
       @films.inspect
     else
-      @genre = "no genre"
+      @genre = "Pas de genre spécifié"
     end
   end
 
