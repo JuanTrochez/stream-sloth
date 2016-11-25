@@ -1,43 +1,33 @@
+<div class="films">
 <p id="notice"><%= notice %></p>
 
-<h1>Films</h1>
+<h1 class="page-title">Films</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Titre</th>
-      <th>Realisateur</th>
-      <th>Date sortie</th>
-      <th>Date production</th>
-      <th>Synopsis</th>
-      <th>Pays</th>
-      <th>Genres</th>
-      <th>Duree</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <div class="container list-films">
     <% @films.each do |film| %>
-      <tr>
-        <td><%= film.titre %></td>
-        <td><%= film.realisateur %></td>
-        <td><%= film.date_sortie %></td>
-        <td><%= film.date_production %></td>
-        <td><%= film.synopsis %></td>
-        <td><%= film.pays %></td>
-        <td><%= Genre.find(film.genre_id).nom %></td>
-        <td><%= film.duree %></td>
-        <td><%= image_tag film.image %></td>
-        <td><%= link_to 'Show', film %></td>
-        <td><%= link_to 'Edit', edit_film_path(film) %></td>
-        <td><%= link_to 'Destroy', film, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <div class="film item">
+
+          <div class="image">
+            <%= image_tag film.image %>
+          </div>
+
+          <div class="infos">
+            <div class="titre"><%= link_to film.titre, film %><%=  %></div>
+            <div class="genre"><%= Genre.find(film.genre_id).nom %></div>
+            <div class="date"><td><%= film.date_sortie %></td></div>
+          </div>
+
+          <div class="actions">
+            <%= link_to 'Edit', edit_film_path(film), class:'btn btn-primary' %>
+            <%= link_to 'Destroy', film, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
     <% end %>
-  </tbody>
-</table>
+  </div>
 
 <br>
 
 <%= link_to 'New Film', new_film_path %>
+
+</div>
+
