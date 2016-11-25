@@ -56,8 +56,8 @@
     <column id="23" parent="8" name="pays">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="24" parent="8" name="genres">
-      <data-type>varchar(255)|0</data-type>
+    <column id="24" parent="8" name="genre_id">
+      <data-type>int(11)|0</data-type>
     </column>
     <column id="25" parent="8" name="duree">
       <data-type>varchar(255)|0</data-type>
@@ -73,58 +73,70 @@
       <mandatory>1</mandatory>
       <data-type>datetime|0</data-type>
     </column>
-    <key id="29" parent="8" name="PRIMARY">
+    <column id="29" parent="8" name="image_file_name">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="30" parent="8" name="image_content_type">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="31" parent="8" name="image_file_size">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="32" parent="8" name="image_updated_at">
+      <data-type>datetime|0</data-type>
+    </column>
+    <key id="33" parent="8" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="30" parent="9" name="id">
+    <column id="34" parent="9" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="31" parent="9" name="nom">
+    <column id="35" parent="9" name="nom">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="32" parent="9" name="created_at">
+    <column id="36" parent="9" name="created_at">
       <mandatory>1</mandatory>
       <data-type>datetime|0</data-type>
     </column>
-    <column id="33" parent="9" name="updated_at">
+    <column id="37" parent="9" name="updated_at">
       <mandatory>1</mandatory>
       <data-type>datetime|0</data-type>
     </column>
-    <key id="34" parent="9" name="PRIMARY">
+    <key id="38" parent="9" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <column id="35" parent="10" name="version">
+    <column id="39" parent="10" name="version">
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <key id="36" parent="10" name="PRIMARY">
+    <key id="40" parent="10" name="PRIMARY">
       <columns>version</columns>
       <primary>1</primary>
     </key>
-    <column id="37" parent="11" name="id">
+    <column id="41" parent="11" name="id">
       <mandatory>1</mandatory>
       <data-type>int(11)|0</data-type>
       <sequence-identity>1</sequence-identity>
     </column>
-    <column id="38" parent="11" name="lien">
+    <column id="42" parent="11" name="lien">
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="39" parent="11" name="film_id">
+    <column id="43" parent="11" name="film_id">
       <data-type>int(11)|0</data-type>
     </column>
-    <column id="40" parent="11" name="created_at">
+    <column id="44" parent="11" name="created_at">
       <mandatory>1</mandatory>
       <data-type>datetime|0</data-type>
     </column>
-    <column id="41" parent="11" name="updated_at">
+    <column id="45" parent="11" name="updated_at">
       <mandatory>1</mandatory>
       <data-type>datetime|0</data-type>
     </column>
-    <key id="42" parent="11" name="PRIMARY">
+    <key id="46" parent="11" name="PRIMARY">
       <columns>id</columns>
       <primary>1</primary>
     </key>

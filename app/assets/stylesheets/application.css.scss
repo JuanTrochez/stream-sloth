@@ -44,3 +44,45 @@ a.btn  {
   }
 }
 
+.image-container{
+  display: inline-block;
+  width: 25%;
+  margin-right: 4%;
+  float:left;
+  img{
+    width:100%;
+    margin-bottom: 5%;
+  }
+}
+
+.info-container{
+  display: inline-block;
+  width: 70%;
+}
+
+.bandeAnnonce{
+  font-size: 0;
+  text-align: center;
+  iframe {
+    width: 60%;
+    height: 250px;
+  }
+}
+
+.titreFilmDescription{
+  text-align: center;
+  font-size: large;
+}
+
+.rightSideFilmDescription{
+  display: inline-block;
+  width:30%;
+  text-align : left;
+  vertical-align: top;
+}
+
+.leftSideFilmDescription{
+  display: inline-block;
+  width:30%;
+  vertical-align: top;
+}
