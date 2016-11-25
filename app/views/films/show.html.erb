@@ -42,6 +42,11 @@
 </p>
 
 <%= image_tag @film.image %>
+<p>
+  <%= @videos.each do |video| %>
+      <iframe src="<%= video.lien %>" frameborder="0" allowfullscreen></iframe>
+  <% end %>
+</p>
 
 <%= link_to 'Edit', edit_film_path(@film) %> |
-<%= link_to 'Back', films_path %>
+  <%= link_to 'Back', films_path %>

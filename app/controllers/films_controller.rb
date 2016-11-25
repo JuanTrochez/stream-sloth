@@ -10,6 +10,7 @@ class FilmsController < ApplicationController
   # GET /films/1
   # GET /films/1.json
   def show
+    @videos = Video.where(:film_id => @film.id)
   end
 
   # GET /films/new

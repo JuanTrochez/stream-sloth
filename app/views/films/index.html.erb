@@ -27,9 +27,9 @@
         <td><%= film.date_production %></td>
         <td><%= film.synopsis %></td>
         <td><%= film.pays %></td>
-        <td><%= film.genres %></td>
+        <td><%= Genre.find(film.genre_id).nom %></td>
         <td><%= film.duree %></td>
-        <td><%= film.image %></td>
+        <td><%= image_tag film.image %></td>
         <td><%= link_to 'Show', film %></td>
         <td><%= link_to 'Edit', edit_film_path(film) %></td>
         <td><%= link_to 'Destroy', film, method: :delete, data: { confirm: 'Are you sure?' } %></td>
