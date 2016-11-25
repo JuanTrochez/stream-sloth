@@ -16,10 +16,8 @@
     <%= f.text_field :lien %>
   </div>
 
-  <div class="field">
-    <%= f.label :film_id %>
-    <%= f.number_field :film_id %>
-  </div>
+
+    <%= f.collection_select :film_id, Film.all, :id, :titre %>
 
   <div class="actions">
     <%= f.submit %>
