@@ -13,11 +13,16 @@
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Messages</a></li>
       </ul>
-      <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-right" action="search">
         <div class="form-group input-group">
-          <input type="text" class="form-control" placeholder="Search..">
+          <select name="genre" id="genre-search">
+            <% Genre.all.each do |genre| %>
+            <option value="<%= genre.id %>"><%= genre.nom %></option>
+            <% end %>
+          </select>
+
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">
+            <button class="btn btn-default" type="submit">
               <span class="glyphicon glyphicon-search"></span>
             </button>
           </span>

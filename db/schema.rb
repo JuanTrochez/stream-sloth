@@ -10,20 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161124140723) do
+ActiveRecord::Schema.define(version: 20161125093343) do
 
   create_table "films", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "titre"
     t.string   "realisateur"
     t.date     "date_sortie"
     t.date     "date_production"
-    t.text     "synopsis",        limit: 65535
+    t.text     "synopsis",           limit: 65535
     t.string   "pays"
     t.integer  "genre_id"
     t.string   "duree"
     t.string   "image"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "genres", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
